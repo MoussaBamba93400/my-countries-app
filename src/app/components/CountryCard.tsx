@@ -14,7 +14,7 @@ const CountryCard: React.FC<CountryCardProps> = ({ country }) => {
   const isFavorite = likedCountries.includes(country.cca3);
 
   return (
-    <Link href={`/country/${country.cca3}`}>
+    <Link href={`/country/${country.cca3}`} >
       <div className="country-card">
         <img
           src={country.flags.png}
